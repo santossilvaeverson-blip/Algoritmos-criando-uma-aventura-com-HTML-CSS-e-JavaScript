@@ -6,7 +6,13 @@
 }
 
 body {
-    background-color: #0f172a;
+    /* Caminho para a imagem dentro da pasta img */
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
     color: #f8fafc;
     display: flex;
     justify-content: center;
@@ -16,13 +22,14 @@ body {
 }
 
 .container {
-    background-color: #1e293b;
+    background-color: rgba(30, 41, 59, 0.9);
     border-radius: 12px;
     padding: 30px;
     max-width: 650px;
     width: 100%;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
     border: 1px solid #334155;
+    backdrop-filter: blur(4px);
 }
 
 h1 {
@@ -33,7 +40,7 @@ h1 {
 }
 
 #story-box {
-    background-color: #0f172a;
+    background-color: rgba(15, 23, 42, 0.95);
     padding: 20px;
     border-radius: 8px;
     border-left: 4px solid #38bdf8;
